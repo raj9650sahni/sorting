@@ -1,4 +1,20 @@
 
+'''
+low = Starting index,  high = Ending index 
+quickSort(arr, low, high)
+{
+    if (low < high)
+    {
+        temp is partitioning index, arr[temp] is not at bright place
+        temp = partition(arr, low, high);
+
+        quickSort(arr, low, temp - 1); --- Before temp
+        quickSort(arr, temp + 1, high); --- After temp
+    }
+}
+
+'''
+
 
 
 def partition(arr,low,high):
